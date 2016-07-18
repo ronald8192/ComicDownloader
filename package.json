@@ -1,0 +1,16 @@
+{
+  "name": "comic-downloader",
+  "version": "1.0.0",
+  "description": "download comic from cartoomad.com",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "ronald8192",
+  "license": "MIT",
+  "dependencies": {
+    "jsdom": "^9.4.1",
+    "mkdirp": "^0.5.1",
+    "request": "^2.73.0"
+  }
+}
