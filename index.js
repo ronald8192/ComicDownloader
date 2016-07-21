@@ -52,7 +52,7 @@ if (isNaN(parseInt(comicId)) || comicId == undefined || comicId == null) {
     comicId = parseInt(process.argv[2]);
     downloadRoot = "./download/" + comicId + "/";
 }
-if (isNaN(comicId)) throw new Error("Please provide comic ID: `npm run 123` or `node index.js 123`");
+if (isNaN(comicId)) throw new Error("Please provide comic ID: `npm start 123` or `node index.js 123`");
 
 // get volume list
 console.log("Getting content page...");
