@@ -1,4 +1,4 @@
-# Comic Downloader
+# Comic Downloader (cartoomad)
 
 Downloader for cartoomad.com
 
