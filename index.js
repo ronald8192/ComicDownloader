@@ -78,10 +78,10 @@ jsdom.env(
             console.log("Extract image link...");
             $.each(a, function (k, v) {
                 var volume = {
-                    index: $(v).html().replace('第', '').replace('話', '').replace('卷', '').trim(),
+                    index: $(v).html().replace(/\D/g,""),
                     href: $("base").attr("href") + $(v).attr("href"),
                     images: [],
-                    pages: $(v).next().html().replace('頁', '').replace('(', '').replace(')', '').trim()
+                    pages: $(v).next().html().replace(/\D/g,"")
                 };
                 for (var i = 1; i <= parseInt(volume.pages); i++) {
                     var page = i;
